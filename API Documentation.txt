@@ -1,0 +1,25 @@
+The pseudocode plan for the RESTful API:
+
+1. Import necessary modules (express, mongoose, body-parser, cors, jsonwebtoken, bcrypt, uuid).
+2. Set up express app and middleware.
+3. Connect to MongoDB.
+4. Define User, Post, and Follow schemas and models.
+5. Implement JWT-based authentication middleware.
+6. Create endpoints for user profiles:
+       - POST /users for creating a new user.
+       - GET /users/:id for viewing a user profile.
+       - PUT /users/:id for updating a user profile.
+       - DELETE /users/:id for deleting a user profile.
+7. Create endpoints for posts:
+       - POST /posts for creating a new post.
+       - GET /posts/:id for viewing a post.
+       - PUT /posts/:id for updating a post.
+       - DELETE /posts/:id for deleting a post.
+       - GET /feeds/:id for viewing the latest posts from users that a given user follows.
+8. Create endpoints for following mechanism:
+       - POST /follows for following a user.
+       - DELETE /follows/:id for unfollowing a user.
+       - GET /follows/:id for retrieving the list of users a given user is following.
+       - GET /followers/:id for retrieving the list of users who are following a given user.
+9. Implement MongoDB's aggregation framework in the GET /feeds/:id endpoint to retrieve the latest posts from users that a given user follows, sorted by the most recent.
+10. Start the server.
