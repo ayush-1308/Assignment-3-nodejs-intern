@@ -11,7 +11,7 @@ This is a simple Node.js application using Express, MongoDB, and JWT for authent
 
 1. Clone the repository:
 
-git clone https://github.com/yourusername/yourrepository.git
+git clone https://github.com/ayush-1308/Assignment-3-nodejs-intern.git
 
 2. Navigate to the project directory:
 
